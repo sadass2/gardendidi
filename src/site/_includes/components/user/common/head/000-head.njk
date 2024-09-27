@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .nav-bar {
+    background-color: transparent; /* Makes the nav bar completely transparent */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-bar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  body {
+    padding-top: 50px;
+  }
+</style>
+</head>
+<body>
+  <div class="nav-bar">
+    <a href="{{ '/index.html' | url }}" aria-label="Home">Home</a>
+    <a href="{{ 'https://anvaka.github.io/map-of-reddit/?x=21810.22478412042&y=16479.00313073481&z=20926.52529676387&v=2&q=ChatGPT' | url }}" aria-label="Map For Finding Interests">Map For Finding Interests </a>
+    <a href="{{ 'https://fmhy.pages.dev/ai#online-chatbots' | url }}" aria-label="Resources For Making Interests Reality">Resources For Making Interests Reality</a>
+    <a href="{{ 'https://digigard-one.vercel.app/7-defcon-machine-learning/untitled/' | url }}" aria-label="Blog">Blog</a>
+    <a href="{{ '/contact.html' | url }}" aria-label="Contact">Contact</a>
+  </div>
+</body>
+</html>
